@@ -1,0 +1,90 @@
+.header {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+
+    .header-logo {
+        margin: 0;
+    }
+
+    div:nth-child(2) {
+        width: 50%;
+
+        ul {
+            margin: 0;
+            height: auto;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                display: inline-block;
+                position: relative;
+
+                button {
+                    background-color: transparent;
+                    border: none;
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        text-decoration: none;
+                        font-family: "Inter", sans-serif;
+                        font-size: 1rem;
+                        font-weight: 400;
+                        color: #000000;
+                        // &:hover{
+                        //     text-decoration: underline;
+                        // }
+                    }
+
+                    .dropdownMenu {
+                        display: block;
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        background-color: #fff;
+                        box-shadow: 0 4px 15px #c7c7c780;
+                        padding: 10px;
+                        font-size: 1rem;
+                        list-style: none;
+                        margin: 0;
+                        z-index: 1000;
+                        width: max-content;
+
+                        li {
+                            display: flex;
+                            align-items: center;
+                            padding: 0 4px;
+                            border-radius: 4px;
+                            margin-bottom: 10px;
+                            height: 32px;
+                        }
+
+                        li:hover {
+                            background-color: #d8c6ff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    div:nth-child(3) {
+        button {
+            height: 42px;
+            padding: 0 20px;
+            border: none;
+            background-color: #5a1ce2;
+            font-family: 'IBM Plex Serif', serif;
+            font-size: 1rem;
+            font-weight: 400;
+            color: white;
+            border-radius: 8px;
+        }
+    }
+}
