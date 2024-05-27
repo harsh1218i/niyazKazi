@@ -1,6 +1,6 @@
-// import content from './content';
+import { content } from './content';
 export default function RepeatComponent() {
-    const content = require('./content').content;
+    // const content = require('./content').content;
     // console.log(content, 'harsh');
     return (
         <>
